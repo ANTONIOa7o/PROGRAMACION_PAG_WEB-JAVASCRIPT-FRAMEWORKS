@@ -1,0 +1,28 @@
+h2{
+    text-align: center;
+    color:lightcoral;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+/*
+Fondo
+*/
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.392);
+  }
+  /*
+  Ventana
+  */
+.swal-modal{
+border:8px solid lightgray;
+border-radius: 50%;
+}
+  /*
+  footer
+  */
+  .swal-footer{
+background-color: aliceblue;
+margin-top: 32px;
+border-top: 2px solid rgba(43, 165, 137, 0.392);
+  }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!--Anotaciones-->
+    <!--
+        Inyectar letras, otros framework(estilo, de bbdd....)...
+        recursos...
+    -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <!--
+        ===================
+             JAVASCRIPT
+        ===================
+
+        i.Lenguaje de programacion para añadir interactividad
+        ii. No genera codigo compilado
+        iii.Fundamentos principales:
+            a.Interpretado y Orientado a objetos(objetc)
+            b. Debilmente tipado
+            c.Parte de su esencia, está regido por los principios de EcmaScript
+            d.Sintaxis comparte estructuras de C y posee convenciones similares a JAVA
+            e.Uso principal del lado del Cliente(Browser), no obstante posee
+             recursos del lado del servidor
+            f.Sensible a las grafias(minuscula)
+            g. Sintaxis:
+                g.1 <script>     
+                    Referencias directas a codigo js
+                   </script>
+                g.2
+                link
+                <script src="archivo.js" ></script>
+    -->
+    <script>
+        /*Comentario*/
+        //Comentario de linea
+        /*
+        1º Mesaje alert("a");, directiva de comunicacion
+        */
+        // alert("Bienvenidos a primer Script")ciclo de vida 1
+        swal({
+  title: "Bienvenido a mi primer Script+FrameWork!",
+  text: "Presiona para salir!",
+  button: "Aceptar",
+  icon: "info",
+});
+        /*
+         2º console.log(), muestra de mensaje-comunicacion- (backstage), se muestra
+        en la consola del cliente. Donde se recibe como argumento de uno 
+        o mas objetos
+        Sintaxis:
+        console.log(a,b);
+        */
+       console.log(3+5 + " hola");//ciclo de vida 2
+       /*
+       Encontramos dos operadores distintos
+       a.operador algebraico, adición
+       b. operador concatenador
+       */
+
+       /*
+       3º document.write("a"); Elemnto de traslado de informacion directo
+       al html
+       */
+      document.write("<h2>Hola!! desde mi primera pagina de JS</h2>");// Ciclo de vida 3
+    </script>
+
+    <h2>Hola desde mi primera pagina de JS</h2>
+    <script src="archivo.js"></script>
+</body>
+</html>
