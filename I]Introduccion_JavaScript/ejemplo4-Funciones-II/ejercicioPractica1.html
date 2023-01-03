@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Reloj</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/scriptPractica.js"></script>
+    <link rel="stylesheet" href="css/styleReloj.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2> Ejercicio Práctica2: -Contruye la visualizacion de un reloj-</h2>
+        <ul>
+            <li>Parta de un boton</li>
+            <li>Asociado una imagen, path, vector, UTF-8</li>
+            <li>Muestr hora, minutos y segundos (Estatico)</li>
+            <li>Estructua app</li>
+            <li>Boton cerrar la aplicacion</li>
+        </ul>
+        <ol>
+            <li>valor de la prueba +0.5</li>
+            <li>? primer testeo 30'</li>
+        </ol>
+        <div class="container" style="text-align: center; margin: 0 auto; width: 24rem;">
+            <a type="button" onclick="miHora()" value="Click Hora">
+                <img src="images/organizer_calendar_clock_pencil_10047.png" alt="">
+            </a>
+            <div class="reloj" id="resultado"></div>
+            <a type="button" onclick="cerrar()">
+                <img src="images/close_delete_delete_theaction_theoutput_10252.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
