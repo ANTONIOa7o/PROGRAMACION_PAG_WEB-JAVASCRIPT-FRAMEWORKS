@@ -1,0 +1,25 @@
+/*
+Calculos de Crédito personal sencillo
+crt(credito*redito*tiempo)
+Calculo de un credito::after
+* a 24 meses tipo de interes 5%
+* a 60 meses tipo de interes 8%
+* a partir de 60 tipo de interes 10%
+*/
+.visualizacion{
+ 
+    font: normal, bold, 18px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    box-shadow: 4px 0px 2px #cccc;
+ 
+}
+button{
+    margin:6px
+}
+h3{
+    color: green;
+    letter-spacing: -2px;
+}
