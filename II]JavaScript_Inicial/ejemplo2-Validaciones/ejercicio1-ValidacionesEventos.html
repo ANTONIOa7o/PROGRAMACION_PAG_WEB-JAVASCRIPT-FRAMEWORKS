@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos OnMouse & Onclick</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/script3.js"></script>
+    <link rel="stylesheet" href="css/styles3.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin: 0 auto; width: 24rem;">
+
+        <h4>Validacion I</h4>
+        <form action="">
+            <div class="form-floating">
+                <input type="password" class="form-control" id="clave" placeholder="">
+                <label for="floatingPassword">PASSWORD</label>
+                <div class="form-text">Minimo 8 caracteres</div>
+            </div><br>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="">
+                <label for="floatingInput"> Direccion e-mail</label>
+            </div>
+            <div class="form-text">Rellena todos los campos</div>
+            <hr>
+            <input type="button" value="Ingresar" 
+            onmouseover="mensajeIn()"
+          
+            onclick=""class="btn btn-secondary">
+            
+        </form>
+        <!-- <p id="resultado"></p> -->
+        <marquee behavior="" direction="" id="resultado"></marquee>
+    </div>
+</body>
+
+</html>
