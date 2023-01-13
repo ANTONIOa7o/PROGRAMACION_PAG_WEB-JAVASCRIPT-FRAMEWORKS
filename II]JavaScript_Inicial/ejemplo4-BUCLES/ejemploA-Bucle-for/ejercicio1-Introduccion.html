@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sentencia for (Ortodoxa)</title>
+</head>
+<body>
+    <!--
+                   =======
+                    3. for
+                   =======
+        
+        Su uso principal, o su gran apotacion, surgió de la necesidad de poder recorrer unas determindas
+        estructuras(elementos, datos, valores,....) y analogias con otros lenguajes
+
+        Sintaxis:
+          for (variable i = valor; condiciones de i(true/false); valor del ciclo[incremento, decrementos..])
+           {
+            cuerpo de la iteracion, declaracion por cada evaluacion/ciclo de i
+            var a = [i];
+            
+        }
+Ejemplo recorrido numérico del 1 al 100 (infinito);
+    -->
+    <script>
+       /*
+       Advertencias: Ambito del ciclo/bucle, dos lecturas:
+       a.tendremos todos los datos que validan la condicion
+       b.salida final de false del bucle
+       */
+      for(var i =1;i<=100;i++){//true, el bucle acabará cuando la condicion sea false
+
+        console.log(i);//a 1,2,3,4,5....100
+      }
+     console.log(i);//b 101
+
+    </script>
+</body>
+</html>
