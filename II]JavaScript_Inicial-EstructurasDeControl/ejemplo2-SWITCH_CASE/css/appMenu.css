@@ -1,0 +1,26 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Permanent+Marker&family=Rubik+Dirt&display=swap');
+
+ h4,
+ button {
+     margin-top: 16px;
+     color: green;
+     letter-spacing: -0.1rem;
+     font-size: 20px;
+     font-family: 'Permanent Marker', cursive;
+ }
+
+ .post-it {
+
+     width: 15.62rem;
+     height: 15rem;
+     position: relative;
+     background-color: #ffa;
+     margin: 30px auto;
+     border-radius: 0px 0px 0px 30px/45px;
+     box-shadow: inset 0px -40px 40px rgb(0, 0, 0, 0.2),
+         inset 0px 25px 10px rgb(0, 0, 0, 0.2),
+         0px 5px 5px rgb(0, 0, 0, 0.2);
+     font-family: 'Permanent Marker';
+     font-size: 20px;
+     padding: 50px;
+ }

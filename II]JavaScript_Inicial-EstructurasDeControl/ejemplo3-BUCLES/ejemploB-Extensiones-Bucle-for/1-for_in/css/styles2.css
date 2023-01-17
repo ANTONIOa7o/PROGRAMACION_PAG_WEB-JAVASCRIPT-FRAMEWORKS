@@ -1,0 +1,35 @@
+
+button{
+
+    margin: 36px;
+    color: white;
+    font-weight: bold;
+    padding: 7px 20px;
+    border-radius: 100px;
+
+}
+
+.azul{
+
+    background-color: #3498db;
+    box-shadow: 0px 5px 0px 0px #2980b9;
+}
+.azul:hover{
+    background-color: #2980b9;
+}
+.azul:active{
+    box-shadow: 0px 2px 0px 0px #2980b9;
+    color: black !important;
+}
+
+.rojo{
+
+    background-color: #e74c3c;
+    box-shadow: 0px 5px 0px 0px #c0392b;
+}
+.rojo:hover{
+    background-color: #ff5242;
+}
+.rojo:active{
+    box-shadow: 0px 2px 0px 0px #c0392b;
+}

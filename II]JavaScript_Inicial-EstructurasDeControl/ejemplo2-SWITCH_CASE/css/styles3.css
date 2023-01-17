@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono');
+
+.pantalla{
+
+    background-color: black;
+    color: #adff2f;
+    font-family: 'Nova Mono', monospace;
+    border-right: gainsboro solid 16px;
+}

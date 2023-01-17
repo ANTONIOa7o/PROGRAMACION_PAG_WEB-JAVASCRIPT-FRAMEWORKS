@@ -1,0 +1,6 @@
+.warning{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
