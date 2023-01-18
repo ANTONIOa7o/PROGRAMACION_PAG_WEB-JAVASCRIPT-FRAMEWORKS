@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a los Arrays I</title>
+</head>
+
+<body>
+    <!--
+                            ================ 
+                             MATRICES (Array)
+                            ================
+                DEFINICION: Serán un conjunto de Elementos, colocados de forma
+                adyacente (en la memoria), de esta manera nos va a permitir acceder
+                a los elementos con un solo nombre. 
+                Además no perderemos la independencia de dicho elementos y de sus valores.
+                Logramos así poder manejar de manera eficaz una gran cantidad de elementos,datos..etc
+                , agruparlos, ordenarlos y de acceso directo a dichos datos
+                ⇛Argumentos.
+                1º todo elemento de una matriza lleva asociado un -indice-
+                2º El primer elemento de una Matriz su posicion sera SIEMPRE 0.
+
+                ⇛Tipos de matrices:
+                    1º Según su estabilidad en el tamaño(Estaticas)
+                        -Tamaño fijo
+                        -Podremos modificar añadiendo elmentos, cambio de tu dimension,
+                        transformandolas en Dinamicas
+                    2º Segun su Dimension:
+                        -Un sola dimension (Un grupo de elemntos [],{})
+                ⇛ Propiedades:
+
+                    - metodo .length(), no va a definir el tamaño del Array, es decir,
+                    el nº de elementos de los que consta el array
+
+                             for (let i = 0; i < array.length; i++) {
+                                 const element = array [i];
+                                                }
+                    -Sintaxis:
+                        var n = []; datos adyacentes cargados en memoria
+                        var n´= [n1,n2,n3...]
+                        var n1 = new Array(3) dicho Array posee tres elementos
+
+                        var s = new Array ( s1, s2, s3...)
+                        var s = new Array(); datos adyacentes cargados en el uso unico de s
+
+            -->
+    <script>
+
+        //Objeto
+        var numero = new Array(1, 10, 3, 4, 5, 23, 7, 8)//Carga en la memoria de la varia numero = 0
+        // var numero = [1,2,3,4,5,6,7,8] Mayor carga en la memoria adyacente
+
+        /*Recorrido de Array*/
+        //1º
+        for (let i = 0; i < numero.length; i++) {
+            console.log(numero[i]);
+
+        }
+        //2º 
+        for (const i of numero) {
+            console.log(i);
+        }
+        //3º 
+        for (const i in numero) {
+            /*  console.log(numero[i]); los valores */
+            console.log(i);//indices
+           /*  console.log(numero[i]); */
+        }
+
+/*
+        METODOS DE ARRAY
+*/
+
+//1º Array Invertido
+document.write(`Array invertido:  ${numero.reverse()} <br>`);
+
+//2º Array Ascenente
+document.write(`Array Ascendente:  ${numero.sort()} <br>`);
+
+//3º Array definicion en la separacion de los elementos
+document.write(`Array separado por caracteres:  ${numero.join('/')} <br>`);
+
+//4º Array partiendo de un elemento(indice)
+document.write(`Array a partir de un elemento:  ${numero.slice(4)} <br>`);
+
+//5º Array inyeccion al ulitimo elemento
+document.write(`Array ultimo elemento:  ${numero.pop()} <br>`);
+
+//6º Concatenaciones
+var letras = ['a','b','c','d','e']// Concatenacion sin importar naturaleza de carga de variable ni tipado de las variables
+//string+ number = object + array[]
+/* var suma =0;
+suma = producto*precio */
+
+var suma = numero.concat(letras);
+document.write(`concatenacion de dos Arrays :  ${numero.concat(letras)} <br>`);
+//Ademas propiedad conmutativa
+document.write(`concatenacion de dos Arrays :  ${letras.concat(numero)} <br>`);
+//sustitucion de la variable
+document.write(`concatenacion de dos Arrays :  ${suma} <br>`);
+//La concatenacion de dos arrays concentradas en una nueva variable, que resultado tendrá objects o []elementos del carga adyacente
+console.log(numero);
+console.log(letras);
+console.log(suma);
+
+    </script>
+</body>
+
+</html>
