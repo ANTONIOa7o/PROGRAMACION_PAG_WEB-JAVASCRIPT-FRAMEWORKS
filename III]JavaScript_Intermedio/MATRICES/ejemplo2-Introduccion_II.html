@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a los Arrays II</title>
+</head>
+
+<body>
+    <script>
+        var valoresT = ['hola', 5, false, 1, true, 'adios',6];
+
+        var arrayNumero = 0;
+        var arrayTexto = new Array();// Quien tipara este nuevo objets de Array? los valores de los elemento
+        var arrayNumero = new Array();//nuestro propio objecto
+        var arrayBoolean = new Array();
+        console.log(valoresT);
+
+        // A] Filtrado por tipo de variable: a trave del a) el corrido del array y b) metodo .push() Adherir elemento al array
+
+        //a) Recorrido del Array
+        for (i of valoresT) {
+            if (typeof (i) == 'string') {
+                //b)
+                arrayTexto.push(i);
+
+            } else if (typeof (i) == 'number') {
+                  
+                arrayNumero.push(i);
+
+            } else if (typeof (i) == 'boolean') {
+                  
+                arrayBoolean.push(i);
+            }
+
+        }
+            console.log(arrayTexto);
+            console.log(arrayNumero);
+            console.log(arrayBoolean);
+// B] Acceso a elementos definidos en un Array
+// + indice(b.1)+ operadores aritmeticos(b.2) + logicos(b.3) + miscelanea(b.4) + metodos(b.5)
+/* b.1] */
+if (arrayTexto[0].length > arrayTexto[1].length) {
+    document.write('el texto mayor sera: ' + arrayTexto[0]+ '<br>');    
+    
+} else {
+    document.write('El texto mayor será: ' + arrayTexto[1] + '<br>');
+   
+}
+/* b.2] */
+var suma =0;
+var multiplicacion=1;
+for (valor of arrayNumero) {
+    suma += valor
+    multiplicacion *= valor
+}
+document.write(suma+'<br>');
+
+/* b.3] */
+var resultadoVerdadero= true;
+var resultadoFalso=false;
+
+for (const i of arrayBoolean) {
+    // true  ↓           true ↓  true↓   =           true
+     resultadoVerdadero == true || i;
+    document.write('Resultado Verdadero ' + resultadoVerdadero + '<br>');
+    //false↓         false↓  true↓    =               false
+    resultadoFalso == false && i;
+    document.write('Resultado Falso ' + resultadoFalso + '<br>');
+}
+
+/* b.4]*/
+
+document.write('Multiplicacion: '+ multiplicacion+'<br>');
+document.write(`Suma ${arrayNumero[0] + arrayNumero[1]} <br>`);
+document.write(`Dision ${ arrayNumero[0]/arrayNumero[1]}<br>`);
+document.write(`Dision al resto ${ arrayNumero[1]%arrayNumero[2]}<br>`);
+
+/* b.5]*/
+var frutas = ['Manzanas','Melocotones', 'Fresa', 'Platano','Sandia'];
+console.log(frutas[0]);//Primer elemento
+console.log(frutas.length);//Longitud del Array
+console.log(frutas[frutas.length-1]);//logitud del Array al restarle 1, me permite seleccioar el elemento de dicha posicion, accediendo al ultimo elemento
+
+// i)Añadir elementos
+var añadirElemento = frutas.push('Albaricoque');
+console.log(frutas);//Elemento trasladado siempre al final del Array
+
+// ii)Eliminar el ultimo elementos
+var ultimo = frutas.pop();
+console.log(frutas);
+
+/* // iii)? + revisar pop()
+var seleccion = frutas.splice(1);
+console.log(frutas); */
+
+// iv) Añadir al inicio
+var inicioArray = frutas.unshift('Mango');
+console.log(frutas);
+
+//v) Encontrar el indice del recorrido del un elemento
+var BusquedaIndice = frutas.indexOf('Fresa');
+console.log(BusquedaIndice);
+
+    </script>
+</body>
+
+</html>
